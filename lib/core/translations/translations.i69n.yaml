@@ -1,0 +1,32 @@
+home:
+  pedometer: 'Pedometer'
+  stepsCount(int count , int maxCount): "$count/$maxCount\n${_plural(count, zero:'kroków', one:'step', many:'steps')}"
+  calories: 'Calories (Kcal)'
+  miles: 'Distance (Miles)'
+  kilometers: 'Distance (Km)'
+  time: 'Time'
+settings:
+  settings: 'Pedometer Settings'
+  goal: 'Your goal'
+  goalDetails: 'Steps, Calories, Distance'
+  steps: 'Steps'
+  calories: 'Calories (Kcal)'
+  miles: 'Distance (Miles)'
+  kilometers: 'Distance (Km)'
+  time: 'Time'
+  basicData: 'Health details'
+  basicDataDetails: 'Weight, Height, Gender'
+  measurementSystem: 'Measurement system'
+  measurementSystemDetails: 'Imperial / Metrics'
+  measurementSystemImperial: 'Imperial'
+  measurementSystemMetrics: 'Metrics'
+  selectGender: 'Gender'
+  male: 'Male'
+  female: 'Female'
+  height: 'Height'
+  weight: 'Weight'
+
+
+
+
+

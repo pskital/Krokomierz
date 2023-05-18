@@ -1,0 +1,29 @@
+home:
+  pedometer: 'Krokomierz'
+  stepsCount(int count , int maxCount): "$count/$maxCount\n${_plural(count, zero:'kroków', one:'krok', many:'kroki')}"
+  calories: 'Kalorie (Kcal)'
+  miles: 'Dystans (Mile)'
+  kilometers: 'Dystans (Km)'
+  time: 'Czas'
+settings:
+  settings: 'Ustawienia krokomierza'
+  goal: 'Twój cel'
+  goalDetails: 'Kroki, Kalorie, Dystans'
+  steps: 'Kroki'
+  calories: 'Kalorie (Kcal)'
+  miles: 'Dystans (Mile)'
+  kilometers: 'Dystans (Km)'
+  time: 'Czas'
+  basicData: 'Podstawowe dane'
+  basicDataDetails: 'Waga, wzrost, płeć'
+  measurementSystem: 'System miar'
+  measurementSystemDetails: 'Imperial / Metrics'
+  measurementSystemImperial: 'Imperialny'
+  measurementSystemMetrics: 'Metryczny'
+  selectGender: 'Płeć'
+  male: 'Mężczyzna'
+  female: 'Kobieta'
+  height: 'Wzrost'
+  weight: 'Waga'
+
+

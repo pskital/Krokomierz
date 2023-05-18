@@ -1,0 +1,92 @@
+name: ps_pedometer
+description: Pedometer
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  #flutter sdk
+  flutter:
+    sdk: flutter
+
+  #localizations
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+  #databae
+  floor: ^1.4.2
+
+  #path provider
+  path_provider: ^2.0.14
+
+  #translations
+  i69n: ^2.1.0
+
+  #bloc
+  bloc: ^8.0.3
+  bloc_concurrency: ^0.2.0
+  flutter_bloc: ^8.0.1
+  equatable: ^2.0.3
+
+  #service locator
+  get_it: ^7.2.0
+  injectable: ^1.5.3
+
+  #open external apps
+  url_launcher: ^6.1.6
+
+  #pedometer
+  pedometer:
+    path: pedometer
+
+  #json
+  json_annotation: ^4.7.0
+
+  #progress indicator
+  percent_indicator: ^4.2.3
+
+dev_dependencies:
+  json_serializable: ^6.3.1
+  injectable_generator: ^1.5.4
+  flutter_gen_runner: ^5.3.0
+  build_runner: ^2.2.0
+  hive_generator: ^1.1.2
+
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+
+
+  fonts:
+    - family: SourceSansPro
+      fonts:
+        - asset: assets/fonts/SourceSansPro-Bold.ttf
+        - asset: assets/fonts/SourceSansPro-Regular.ttf
+        - asset: assets/fonts/SourceSansPro-SemiBold.ttf
+
+flutter_gen:
+  output: lib/core/assets/
+
+scripts:
+  dart_runner_build: dart run build_runner build --delete-conflicting-outputs
+  dart_analyze: dart analyze
+  dart_fix: dart fix lib --apply
+  dart_format: dart format lib
+  flutter_pub_cache_clean: flutter pub cache clean
+  flutter_clean: flutter clean
+  flutter_pub_outdated: flutter pub outdated
+  flutter_pub_upgrade: flutter pub upgrade
+  flutter_pub_deps: flutter pub deps
+
